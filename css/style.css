@@ -8266,8 +8266,8 @@ h1, h2, h3, h4, h5,
       background: #28a745;
       border: 1px solid #28a745; }
   .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored a {
-    border: 1px solid #a0f669;
-    background: #a0f669 !important; }
+    border: 1px solid #28a745;
+    background: #28a745 !important; }
   .ftco-navbar-light .navbar-nav > .nav-item .nav-link.active {
     background: transparent;
     background: none;
@@ -8728,20 +8728,20 @@ h1, h2, h3, h4, h5,
         background: #28a745 !important;
         color: #000000 !important; }
   .btn.btn-secondary {
-    background: #a0f669 !important;
-    border: 1px solid #a0f669 !important;
+    background: #28a745 !important;
+    border: 1px solid #28a745 !important;
     color: #000000 !important; }
     .btn.btn-secondary:hover {
-      border: 1px solid #a0f669 !important;
+      border: 1px solid #28a745 !important;
       background: transparent !important;
-      color: #a0f669 !important; }
+      color: #28a745 !important; }
     .btn.btn-secondary.btn-outline-primary {
-      border: 1px solid #a0f669;
+      border: 1px solid #28a745;
       background: transparent;
-      color: #a0f669; }
+      color: #28a745; }
       .btn.btn-secondary.btn-outline-primary:hover {
         border: 1px solid transparent;
-        background: #a0f669;
+        background: #28a745;
         color: #000000; }
   .btn.btn-white {
     background: #000000 !important;
@@ -8921,13 +8921,17 @@ h1, h2, h3, h4, h5,
 
 .ftco-hireme {
   background: #28a745;
-  z-index: -1; }
+  z-index: -1;
+  min-height: 600px;
+  }
   .ftco-hireme h2 {
     color: #ffffff;
     font-size: 40px;
     font-weight: 900; }
     .ftco-hireme h2 span {
       color: #28a745; }
+
+
 
 @media (min-width: 992px) {
   .margin-top {
@@ -9363,7 +9367,7 @@ textarea.form-control {
     margin-bottom: 4px;
     font-weight: 400; }
     .block-27 ul li a, .block-27 ul li span {
-      color: #a0f669;
+      color: #28a745;
       text-align: center;
       display: inline-block;
       width: 40px;
@@ -9372,7 +9376,7 @@ textarea.form-control {
       border-radius: 50%;
       border: 1px solid #cccccc; }
     .block-27 ul li.active a, .block-27 ul li.active span {
-      background: #a0f669;
+      background: #28a745;
       color: #000000;
       border: 1px solid transparent; }
 
@@ -9415,7 +9419,7 @@ textarea.form-control {
   background-position: top center; }
   @media (max-width: 991.98px) {
     .contact-section .img {
-      height: 500px; } }
+      height: 700px; } }
 
 .contact-section .contact-info p a {
   color: #000000; }
@@ -9682,3 +9686,31 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+
+
+/* Cambiar color de fondo y texto al seleccionar */
+::selection {
+  background: green;   /* color de fondo de la selección */
+  color: white;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+/* Para compatibilidad con Firefox */
+::-moz-selection {
+  background: green;
+  color: white;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+::-webkit-scrollbar-thumb {
+  background: green;
+  border-radius: 0px;
+}
